@@ -1,0 +1,20 @@
+@import "str-to-list";
+
+
+
+
+.category-{$parent_name} .category-boxes {
+  .category-box {
+    border: #{$box-border}px;
+  }
+  .category-box-heading {
+    padding: 0;
+    border-radius: #{$box-rounding}px;
+    img.logo { display: none; }
+    h3 { padding: 1em 0; }
+  }
+  .category-box-{$subcategory} {
+    .category-box-heading      { background-color: #{$bg_color}; }
+    .category-box-heading > h3 { color: #{$h_color; }
+  }
+}
